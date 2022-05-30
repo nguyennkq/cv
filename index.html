@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Asignment 1</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div class="bg-slate">
+      <!-- HEADER -->
+      <div
+        class="container mx-auto flex justify-between items-center px-8 md:px-0 xl:px-8"
+      >
+        <img class="w-12 md:w-28 mt-2" src="../images/logo.png" alt="" />
+        <ul
+          id="menu"
+          class="hidden fixed top-0 left-0 w-full h-screen bg-green2 flex-col flex justify-center items-center md:relative md:h-auto md:bg-transparent md:flex md:flex-row md:space-x-4 md:justify-end"
+        >
+          <li>
+            <a class="block p-3 text-white hover:text-red" href="#">HOME</a>
+          </li>
+          <li>
+            <a class="block p-3 text-white hover:text-red" href="#">ABOUT</a>
+          </li>
+          <li>
+            <a class="block p-3 text-white hover:text-red" href="#">CONTACT</a>
+          </li>
+          <li>
+            <a class="block p-3 text-white hover:text-red" href="#"
+              >PORTFOLIO</a
+            >
+          </li>
+          <li>
+            <button
+              class="px-12 py-2 md:bg-green2 bg-neutral text-white rounded-l-3xl rounded-r-3xl hover:text-red"
+            >
+              CV
+            </button>
+          </li>
+        </ul>
+        <div class="z-10 md:hidden" id="menu-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+
+      <div class="container mx-auto text-white px-8 md:px-0 mt-16 xl:px-8">
+        <!--Contact -->
+        <div class="text-left md:grid md:grid-cols-2 md:gap-8">
+          <div class="container mx-auto">
+            <p class="">Hello 👋, I'm</p>
+            <h3 class="text-4xl">Nguyennk's</h3>
+            <p class="text-xl mt-2 text-green1">Full stack developer</p>
+            <p class="">
+              I'm a computer technician with a focus on web development with
+              JavaScript.
+            </p>
+            <button
+              class="mt-6 py-3 px-12 bg-green2 rounded-l-3xl rounded-r-3xl mb-4 hover:text-red"
+            >
+              Contact
+            </button>
+          </div>
+          <!-- Slideshow -->
+          <div class="md:relative hidden md:block">
+            <img class="slider md:block" src="../images/slide1.jpg" alt="" />
+            <img class="slider md:block" src="../images/slide2.png" alt="" />
+            <img class="slider md:block" src="../images/slide3.png" alt="" />
+            <img class="slider md:block" src="../images/slide4.png" alt="" />
+          </div>
+        </div>
+        <!--About me -->
+        <div
+          class="text-center md:text-left mt-16 md:mt-40 md:grid md:grid-cols-2 md:gap-8 xl:mt-96"
+        >
+          <div class="">
+            <h3
+              class="text-2xl underline decoration-green1 underline-offset-4 text-center md:text-left mb-4"
+            >
+              About me
+            </h3>
+            <p class="">
+              My name is Nguyennk's, I'm a computer technician with a great
+              passion for programming.
+            </p>
+            <p class="mt-6">
+              Improved my skills as a Front-End and Back-End developer
+            </p>
+            <p class="mt-8">
+              I develop websites and applications using HTML, CSS, and
+              JavaScript.
+            </p>
+            <p class="mt-6 md:mt-0">
+              I'm always improving myself with each project I get my hands on.
+            </p>
+            <p class="mt-11">
+              I am a dedicated person who pursues his dreams, hardworking and
+              results oriented, I always seek to achieve my best version.
+            </p>
+            <p class="text-green1 text-lg mt-4 mb-2">
+              Here are my main skills:
+            </p>
+            <ul
+              class="flex justify-center md:justify-start space-x-3 mb-10 items-center"
+            >
+              <li class="w-6"><img src="../images/react.png" alt="" /></li>
+              <li class="w-6"><img src="../images/vue.png" alt="" /></li>
+              <li class="w-6 bg-yellow">
+                <img src="../images/js.png" alt="" />
+              </li>
+              <li class="w-6 bg-orange">
+                <img src="../images/html.png" alt="" />
+              </li>
+              <li class="w-6 bg-blue">
+                <img src="../images/css.png" alt="" />
+              </li>
+              <li class="w-6"><img src="../images/typejs.png" alt="" /></li>
+            </ul>
+          </div>
+          <img class="" src="../images/about_me2.png" alt="" />
+        </div>
+        <h1 class="text-center text-4xl mt-16 mb-10 md:mb-14">My portfolio</h1>
+        <!--window -->
+        <div class="grid md:grid-cols-3 md:grid-rows-2 md:gap-4 grid-cols-1">
+          <!-- 1 -->
+          <div
+            class="flex flex-col justify-between px-4 boder border-neutral border-2 bg-neutral rounded-l-2xl rounded-r-2xl shadow-lg shadow-green1/40"
+          >
+            <div class="flex flex-row justify-between mt-2">
+              <img class="w-8" src="../images/folder.png" alt="" />
+              <img class="w-6" src="../images/cat.png" alt="" />
+            </div>
+            <div class="mb-4 mt-4 flex-auto">
+              <h3 class="mb-4">FCalendar</h3>
+              <p class="">
+                Uma aplicação Web realizada durante o Hackathon do programa de
+                formação da
+              </p>
+              <p class="underline underline-offset-2 decoration-green1">
+                FCamara
+              </p>
+            </div>
+            <ul class="flex space-x-4 mb-4">
+              <li>Node</li>
+              <li>Express</li>
+              <li>MySql</li>
+              <li>Ejs</li>
+            </ul>
+          </div>
+          <!-- 2 -->
+          <div
+            class="flex flex-col justify-between boder border-neutral border-2 bg-neutral rounded-l-2xl rounded-r-2xl mt-4 md:mt-0 shadow-lg shadow-green1/40 px-4"
+          >
+            <div class="flex justify-between mt-2">
+              <img class="w-8" src="../images/folder.png" alt="" />
+              <div class="flex space-x-2">
+                <img class="w-6" src="../images/cat.png" alt="" />
+                <svg
+                  class="w-6 fill-red"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="mb-4 mt-4 flex-auto">
+              <h3 class="mb-4">Github Searcher</h3>
+              <p class="">
+                Uma versão mais agradável para ver seu perfil do GitHub, inclui
+                visualização de dados , repositórios, compartilhamento entre
+                outros.
+              </p>
+            </div>
+            <ul class="flex space-x-4 items-center mb-4">
+              <li>React</li>
+              <li>Typescript</li>
+              <li>Styled Components</li>
+            </ul>
+          </div>
+          <!-- 3 -->
+          <div
+            class="flex flex-col justify-between boder border-neutral border-2 bg-neutral rounded-l-2xl rounded-r-2xl mt-4 md:mt-0 shadow-lg shadow-green1/40 px-4"
+          >
+            <div class="flex justify-between mt-2">
+              <img class="w-8" src="../images/folder.png" alt="" />
+              <img class="w-6" src="../images/cat.png" alt="" />
+            </div>
+            <div class="mb-4 mt-4 flex-auto">
+              <h3 class="mb-4">Sunnyside agency</h3>
+              <p class="">
+                Uma lading page de uma empresa fictícia proposta pelo
+              </p>
+              <p class="underline underline-offset-2 decoration-green1">
+                Frontend Designer.
+              </p>
+            </div>
+            <ul class="flex space-x-4 mb-4">
+              <li>Html</li>
+              <li>Css</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!-- 4 -->
+          <div
+            class="flex flex-col justify-between boder border-neutral border-2 bg-neutral rounded-l-2xl rounded-r-2xl mt-4 md:mt-0 shadow-lg shadow-green1/40 px-4"
+          >
+            <div class="flex justify-between mt-2">
+              <img class="w-8" src="../images/folder.png" alt="" />
+              <img class="w-6" src="../images/cat.png" alt="" />
+            </div>
+            <div class="mb-4 mt-4 flex-auto">
+              <h3 class="mb-4">Portfólio V1</h3>
+              <p class="">
+                Uma versão alternativa de meu portfólio, utilizando VueJs.
+              </p>
+            </div>
+            <ul class="flex space-x-4 mb-4">
+              <li>VueJs</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!-- 5 -->
+          <div
+            class="flex flex-col justify-between boder border-neutral border-2 bg-neutral rounded-l-2xl rounded-r-2xl mt-4 md:mt-0 shadow-lg shadow-green1/40 px-4"
+          >
+            <div class="flex justify-between mt-2">
+              <img class="w-8" src="../images/folder.png" alt="" />
+              <img class="w-6" src="../images/cat.png" alt="" />
+            </div>
+            <div class="mb-4 mt-4 flex-auto">
+              <h3 class="mb-4">Dtmoney</h3>
+              <p class="">
+                Um gerenciador de finanças para analisar seus ganhos, gastos e
+                ter um controle maior de suas finanças.
+              </p>
+            </div>
+            <ul class="flex space-x-4 mb-4">
+              <li>VueJs</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <!-- 6 -->
+          <div
+            class="flex flex-col justify-between boder border-neutral border-2 bg-neutral rounded-l-2xl rounded-r-2xl mt-4 md:mt-0 shadow-lg shadow-green1/40 px-4"
+          >
+            <div class="flex justify-between mt-2">
+              <img class="w-8" src="../images/folder.png" alt="" />
+              <div class="flex space-x-2">
+                <img class="w-6" src="../images/cat.png" alt="" />
+                <svg
+                  class="w-6 fill-red"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="mb-4 mt-4 flex-auto">
+              <h3 class="mb-4">Music Library</h3>
+              <p class="">
+                Uma interface para uma biblioteca de músicas, semelhante ao
+                Spotify.
+              </p>
+            </div>
+            <ul class="flex space-x-4 mb-4">
+              <li>Html</li>
+              <li>Css</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <h1 class="text-center text-4xl mt-16 mb-10 text-white">Contact me</h1>
+        <p class="text-center text-green1 mb-20 px-8">
+          If you've seen my potential or want to talk to me, don't hesitate to
+          send me a message.
+        </p>
+        <!-- Contact me -->
+        <div
+          class="container md:flex md:justify-center md:space-x-4 xl:px-8 mx-auto xl:w-2/3"
+        >
+          <div
+            class="w-full bg-green1 rounded-l-xl rounded-r-xl xl:px-32 md:flex-row md:space-x-3 py-4 px-8 mx-auto flex flex-col justify-center items-center"
+          >
+            <svg
+              class="w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"
+              />
+            </svg>
+            <p class="text-black mt-2 md:mt-0">nguyennk@fpt.edu.vn</p>
+          </div>
+          <div
+            class="w-full bg-green1 mt-4 md:mt-0 rounded-l-xl rounded-r-xl xl:px-32 md:flex-row md:space-x-3 py-4 px-8 mx-auto flex flex-col justify-center items-center"
+          >
+            <svg
+              class="w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 
+              24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"
+              />
+            </svg>
+            <p class="text-black mt-2 md:mt-0">(+84)0932476977</p>
+          </div>
+        </div>
+        <h3 class="mt-24 text-center text-white">
+          Get in touch using the form below
+        </h3>
+        <!-- Form -->
+        <form class="mt-7 text-center">
+          <input
+            class="w-full bg-slate border border-white placeholder:text-white rounded-l-3xl rounded-r-3xl pl-3 py-2 md:w-1/2"
+            type="text"
+            placeholder="Search"
+            required
+          />
+          <textarea
+            class="w-full bg-slate border border-white rounded-l-3xl rounded-r-3xl mt-2 resize-none pl-3 py-2 placeholder:text-white md:w-1/2"
+            required
+            placeholder="Leave your message"
+            cols="30"
+            rows="8"
+          ></textarea>
+          <button
+            class="bg-green1 py-2 px-10 rounded-l-3xl rounded-r-3xl text-sm block mx-auto mt-20 mb-20 hover:text-red"
+          >
+            TO SEND
+          </button>
+        </form>
+      </div>
+      <!-- FOOTER -->
+      <div class="bg-slate1">
+        <div
+          class="mx-auto container text-center text-white flex flex-col justify-around items-center h-48 md:h-24 md:flex-row md:justify-between xl:px-8"
+        >
+          <h3 class="text-2xl">Nguyennk's</h3>
+          <div class="flex justify-center space-x-8">
+            <p>This site was made with a</p>
+            <p>lot of ❤️</p>
+          </div>
+          <ul class="flex justify-center space-x-2">
+            <li>
+              <img class="w-6" src="../images/icon1.png" alt="" />
+            </li>
+            <li>
+              <img class="w-6" src="../images/icon2.png" alt="" />
+            </li>
+            <li>
+              <img class="w-6" src="../images/icon3.png" alt="" />
+            </li>
+            <li>
+              <img class="w-6" src="../images/icon4.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
